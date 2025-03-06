@@ -34,10 +34,11 @@ num=$(cat C:/cygwin64/home/nemo6/file.txt | tr -cd '[:digit:].-')
 if [ $num -eq 0 ]; then
 	echo "first"
 	((num++))
-	echo $num > file.txt
+	echo $num > C:/cygwin64/home/nemo6/file.txt
+	exec bash --login
 else
 	echo "second"
-	echo "0" > file.txt
+	echo "0" > C:/cygwin64/home/nemo6/file.txt
 fi
 
 # exec bash --login
