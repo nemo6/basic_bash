@@ -6,6 +6,9 @@ alias du_hashx='node "C:/Users/nemo6/Dropbox/E lab2/a.code/javascript/linux/du_h
 alias nodejs_imagemagik_resize_50p='node "C:/Users/nemo6/Dropbox/E lab2/a.code/command/nodejs-command/nodejs-imagemagik-resize-50p/app.js" "$(pwd)"'
 alias compare_print='electron "C:/Users/nemo6/Dropbox/E lab2/a.code/command/nodejs-command/compare_print" "$(pwd)"'
 
+# if cygwin start with no "--login" parameter
+alias node='/cygdrive/c/Program\ Files/nodejs/node.exe'
+
 pwd () {
 	myVar="$PWD"
 	myString="${myVar/\/cygdrive\//}"
@@ -43,3 +46,4 @@ HISTIGNORE='exit'
 # cd "/cygdrive/c/Users/nemo6/Desktop"
 # export HISTCONTROL=ignoreboth:erasedups
 # alias bash='/cygdrive/c/cygwin64/bin/bash'
+# alias node='C:/Program\ Files/nodejs/node.exe'
