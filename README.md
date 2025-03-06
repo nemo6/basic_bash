@@ -1,3 +1,2 @@
-# basic_bash_lang
-
+# basic bash
 hello
