@@ -1,13 +1,7 @@
+# cd "/cygdrive/c/Users/nemo6/Desktop"
 alias cls='clear'
-alias nodemon='nodemon --quiet'
-alias view_reorder='node "C:/Users/nemo6/Dropbox/E lab2/a.code/command/nodejs-command/nodejs-view-reorder/app.js" "$(pwd)"'
-alias du2='node "C:/Users/nemo6/Dropbox/E lab2/a.code/javascript/linux/du.js" "$(pwd)"'
-alias du_hashx='node "C:/Users/nemo6/Dropbox/E lab2/a.code/javascript/linux/du_hashx.js" "$(pwd)"'
-alias nodejs_imagemagik_resize_50p='node "C:/Users/nemo6/Dropbox/E lab2/a.code/command/nodejs-command/nodejs-imagemagik-resize-50p/app.js" "$(pwd)"'
-alias compare_print='electron "C:/Users/nemo6/Dropbox/E lab2/a.code/command/nodejs-command/compare_print" "$(pwd)"'
 
-# if cygwin start with no "--login" parameter
-alias node='/cygdrive/c/Program\ Files/nodejs/node.exe'
+# bash function =>
 
 pwd () {
 	myVar="$PWD"
@@ -27,8 +21,11 @@ coffee2 () {
 }
 
 export -f pwd # export function "pwd" as command in bash ( i can use pwd in other command )
-export HISTCONTROL=$HISTCONTROL${HISTCONTROL+,}ignoredups
 
+# bash function <=
+
+export HISTCONTROL=$HISTCONTROL${HISTCONTROL+,}ignoredups
+# export HISTCONTROL=ignoreboth:erasedups
 HISTIGNORE='exit'
 
 # num=$(cat C:/cygwin64/home/Miguel/file.txt | tr -cd '[:digit:].-')
@@ -43,7 +40,9 @@ HISTIGNORE='exit'
 # fi
 
 # exec bash --login
-# cd "/cygdrive/c/Users/nemo6/Desktop"
-# export HISTCONTROL=ignoreboth:erasedups
+
+# if cygwin start with no "--login" parameter
+alias node='/cygdrive/c/Program\ Files/nodejs/node.exe'
+
 # alias bash='/cygdrive/c/cygwin64/bin/bash'
 # alias node='C:/Program\ Files/nodejs/node.exe'
